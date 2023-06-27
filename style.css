@@ -191,7 +191,6 @@ main {
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
-  opacity: 0.3;
   transition: 400ms;
   box-shadow: 10px 10 px 5px #000000;
 }
@@ -200,11 +199,17 @@ main {
   width: 100%;
   max-height: 400px; /* Altura máxima das imagens */
   object-fit: cover;
+  opacity: 0.3;
+  transition: 400ms;
+  box-shadow: 10px 10 px 5px #000000;
 }
 
 .planet-box span {
   display: block;
   margin-top: 10px;
+  opacity: 0.3;
+  transition: 400ms;
+  box-shadow: 10px 10 px 5px #000000;
 }
 
 
@@ -323,96 +328,107 @@ th {
     transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 480px) {
-
-      header {
-        position: relative;
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-
-      body {
-        font-size: 14px;
-        margin: 10px;
-        width: auto;
-      }
-      
-      .header {
-        text-align: center;
-        width: auto;
-      }
-      
-      .header h1 {
-        font-size: 24px;
-
-      }
-
-      .footer-content{
-        text-align: center;
-        width: auto;
-      }
-      
-      .planet-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-      }
-      
-      .planet-item {
-        margin-bottom: 20px;
-        text-align: center;
-        width: auto;
-      }
-      
-      .planet-item img {
-        width: auto;
-        height: auto;
-      }
-      
-      .planet-item span {
-        margin-top: 10px;
-      }
-      h1, h2 {
-        font-size: 24px;
-      }
-
-      nav li{
-        display: inline;
-        margin: 0 5px;
-      }
-
-      nav a {
-        font-size: 14px;
-      }
-
-      .video {
+.gemini-sombra {
+    width: 60%;
+    height: 60%;
+    transition: 400ms;
+    box-shadow: 0px 10px 5px 20px #000000;
     text-align: center;
-    padding: 3em 30px;
-    width: auto;
-    background: linear-gradient(darkblue, #000005);
-    display: inline;
+}
 
-    }   
 
-    .iframe-wrapper {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    @media screen and (max-width: 480px) {
+
+          header {
+            position: relative;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          body {
+            font-size: 14px;
+            margin: 10px;
+            width: auto;
+          }
+          
+          .header {
+            text-align: center;
+            width: auto;
+          }
+          
+          .header h1 {
+            font-size: 24px;
+
+          }
+
+          .footer-content{
+            text-align: center;
+            width: auto;
+          }
+          
+          .planet-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: auto;
+          }
+          
+          .planet-item {
+            margin-bottom: 20px;
+            text-align: center;
+            width: auto;
+          }
+          
+          .planet-item img {
+            width: auto;
+            height: auto;
+          }
+          
+          .planet-item span {
+            margin-top: 10px;
+          }
+          h1, h2 {
+            font-size: 24px;
+          }
+
+          nav li{
+            display: inline;
+            margin: 0 5px;
+          }
+
+          nav a {
+            font-size: 14px;
+          }
+
+          .video {
+        text-align: center;
+        padding: 3em 30px;
         width: auto;
-    }
+        background: linear-gradient(darkblue, #000005);
+        display: inline;
 
-    .contato {
-    width: auto;
-    }
+        }   
 
-    .submit-button {
+        .iframe-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+        }
+
+        .contato {
         width: auto;
-    }
+        }
 
-    .conteudo_planetas_gasosos {
-        width: auto;
-    }   
+        .submit-button {
+            width: auto;
+        }
+
+        .conteudo_planetas_gasosos {
+            width: auto;
+}
+
+
 }
